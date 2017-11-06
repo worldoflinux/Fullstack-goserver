@@ -85,8 +85,8 @@ func CreateEndpoint(w http.ResponseWriter, req *http.Request) {
 }
 
 func main() {
-	fmt.Println("Starting server at http://10.0.1.15/fullstack-api")
-	cluster, err  := gocb.Connect("couchbase://10.0.1.15")
+	fmt.Println("Starting server at http://localhost/fullstack-api")
+	cluster, err  := gocb.Connect("couchbase://localhost")
 	if err != nil {
 		fmt.Println("ERRROR CONNECTING TO CLUSTER TRY AGAIN:", err)
 	}
